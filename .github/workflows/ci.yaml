@@ -34,11 +34,11 @@ jobs:
           extensions: pdo, pdo_mysql
           coverage: none
 
-      # - name: Set up environment
-      #   run: cp .env.example .env
+      - name: Set up environment
+        run: cp .env.example .env
 
-      # - name: Generate app key
-      #   run: php artisan key:generate
+      - name: Generate app key
+        run: php artisan key:generate
 
       - name: Install dependencies
         run: composer install --no-progress --prefer-dist
