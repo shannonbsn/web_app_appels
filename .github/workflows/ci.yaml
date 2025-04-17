@@ -37,11 +37,11 @@ jobs:
       - name: Set up environment
         run: cp .env.example .env
 
+      - name: Install dependencies
+      run: composer install --no-progress --prefer-dist
+
       - name: Generate app key
         run: php artisan key:generate
-
-      - name: Install dependencies
-        run: composer install --no-progress --prefer-dist
 
       # - name: Create mysql database
       #   run: |
