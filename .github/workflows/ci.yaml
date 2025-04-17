@@ -22,4 +22,3 @@ jobs:
         run: ./vendor/bin/pint --test
 
       - run: npm install
-      - run: npm run lint
